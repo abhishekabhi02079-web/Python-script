@@ -1,9 +1,7 @@
 # 1.Write a Python program that performs basic arithmetic operations (addition, subtraction, multiplication, and division) on two numbers.
 #Define the two numbers as variables within the code and print the results for each operation.
-
 a = 20
 b = 30
-
 add  = (a+b)
 sub  = (a-b)
 multiply = (a*b)
@@ -12,3 +10,75 @@ print(add)
 print(sub)
 print(Multiply)
 print(Divide)
+
+
+# 2.Write a Python program that swaps the values of two variables with and without using a third variable.
+#2ans with third variable
+a = 10
+b = 25
+print('Before swapping: ')
+print('a: ',a)
+print('b: ',b)
+#swapping using temprory variable
+Temp = a
+a = b
+b = Temp
+print('After swapping: ')
+print('a: ',a)
+print('b: ',b)
+
+#2ans without third variable
+a = 10
+b = 25
+print('Before swapping: ')
+print('a: ',a)
+print('b: ',b)
+a,b = b,a              #use these without temprory variable
+print('After swapping: ')
+print('a: ',a)
+print('b: ',b)
+
+
+# 3.Simple Interest Calculator
+p = float(input("Enter principal: "))
+r = float(input("Enter rate: "))
+t = float(input("Enter time: "))
+si = (p * r * t) / 100
+print("Simple Interest =", si)
+
+
+# 4.program for Total and average of three numbers
+a = int(intput("Enter the numbers: "))
+b = int(intput("Enter the numbers: "))
+c = int(intput("Enter the numbers: "))
+Total = (a+b+c)
+Aveg = Total/3
+print("Total: ",Total)
+print("Average: ",Aveg)
+
+# 5.Bill Calculator
+price = float(input("Enter product price: "))
+quantity = int(input("Enter quantity: "))
+total = price * quantity
+tax = total * 0.18
+final = total + tax
+print("Total =", total)
+print("Tax =", tax)
+print("Final Bill =", final)
+
+
+# 6.Time Converter (Hours → Minutes & Seconds)
+hours = int(input("Enter hours: "))
+minutes = hours * 60
+seconds = hours * 3600
+print("Minutes =", minutes)
+print("Seconds =", seconds)
+
+
+# 7.Discount Calculator
+price = float(input("Enter price: "))
+discount = float(input("Enter discount %: "))
+discount_amount = (price * discount) / 100
+final_price = price - discount_amount
+print("Discount =", discount_amount)
+print("Final Price =", final_price)
