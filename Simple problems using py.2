@@ -17,3 +17,14 @@ print(Sentence.replace(" ","_"))
 print(Sentence.strip())
 
 
+# 3.Write a Python program that:Asks the user for a string.Prints how many characters are in the string, excluding spaces.
+# Ask the user for a string
+text = input("Enter a string: ")
+# Remove spaces from the string
+no_spaces = text.replace(" ", "")
+# Count characters (excluding spaces)
+count = len(no_spaces)
+# Print the result
+print("Number of characters (excluding spaces):", count)
+
+
