@@ -1,0 +1,46 @@
+# 1.Logical Operator Practice: Write a Python program that takes two numbers as input from the user and checks if:Both numbers are greater than 10 (using and).At least one of the numbers is less than 5 (using or).The first number is not greater than the second (using not).
+a = float(input("Enter the number : "))
+b = float(input("Enter the number : "))
+Both_greater_than_10 : (a > 10) and (b > 10)  #and opetor
+Less_than_5 : (a < 5) or (b < 5)
+not_greater : not(a > b)
+print("\nResult:")
+print("Both numbers are greater than 10:", Both_greater_than_10)
+print("At least one number is less than 5:",Less_than_5)
+print("First number is NOT greater than second:", not_greater)
+
+
+# 2.Create a Python program that asks the user for their age and prints:"You are an adult" if the age is greater than or equal to 18."You are a minor" if the age is less than 18.Use >= and < comparison operators.
+Name : ("Enter the name: ")
+Age : int(input("Age: "))
+#checking age using comparsion opertor
+if age >= 18:
+    print("You are an adult")
+else age < 18:
+    print("You are a minor")
+
+
+# 3. Write a Python program that:\Takes a string as input from the user.Checks if the letter 'a' is in the string (using in).Checks if the string doesn't contain the word "Python" (using not in).
+Message  = str(input("Message: "))
+print("a"  in Message)
+print("Python" not in Message)
+
+
+# 4.Given two integers, write a Python program that:Prints the result of a & b, a | b, and a ^ b.Shifts the bits of a two positions to the left (a << 2).Shifts the bits of b one position to the right (b >> 1).
+# Take input from user
+a = int(input("Enter first integer (a): "))
+b = int(input("Enter second integer (b): "))
+# Bitwise operations
+and_result = a & b
+or_result = a | b
+xor_result = a ^ b
+# Bit shifting
+left_shift = a << 2
+right_shift = b >> 1
+# Display results
+print("\nResults:")
+print("a & b =", and_result)   
+print("a | b =", or_result)
+print("a ^ b =", xor_result)
+print("a << 2 =", left_shift)
+print("b >> 1 =", right_shift)
