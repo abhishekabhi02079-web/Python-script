@@ -1,0 +1,35 @@
+# 1.Create a list of 5 items (strings or numbers).Add a new item to the end of the list and another at the second position.Remove the third item from the list.Print the list after each operation.
+# Step 1: Create a list of 5 string items
+my_list = ["apple", "banana", "cherry", "mango", "orange"]
+print("Initial list:", my_list)
+# Step 2: Add a new item to the end
+my_list.append("grape")
+print("After adding item at end:", my_list)
+# Add another item at second position (index 1)
+my_list.insert(1, "kiwi")
+print("After adding item at second position:", my_list)
+# Step 3: Remove the third item (index 2)
+my_list.pop(2)
+print("After removing third item:", my_list)
+##########or###########
+List = ["apple", "banana", "cherry", "orange", "grape"]
+List.append("kiwi")
+print(List)
+List.insert(1, "melon")
+print(List)
+List.remove("cherry")
+print(List)
+
+
+# 2.Create a list of numbers and:Sort it in descending order.Reverse the sorted list and print it.
+# Create a list of numbers
+numbers = [12, 5, 8, 20, 3, 15]
+print("Original list:", numbers)
+# Sort in descending order
+numbers.sort(reverse=True)
+print("Sorted in descending order:", numbers)
+# Reverse the sorted list
+numbers.reverse()
+print("Reversed list:", numbers)
+
+
