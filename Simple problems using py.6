@@ -1,0 +1,42 @@
+# 1.Tuple Operations:Create a tuple with 5 elements.Try to modify one of the elements. What happens?Perform slicing on the tuple to extract the second and third elements.Concatenate the tuple with another tuple.
+List_items = (1,2,3,4,5)
+print(List_items) #get an error
+Slice_tuple = List_items[1:3]
+Tuple_1 = (6,7,8,9)
+Tuple = List_items + Tuple_1
+Print(Tuple)
+
+
+# 2.Create two sets: one with your favorite fruits and another with your friend’s favorite fruits.Find the union, intersection, and difference between the two sets.Add a new fruit to your set.Remove a fruit from your set using both remove() and discard(). What happens when the fruit doesn’t exist?
+Set_1 = {"Banana", "orange" , "Mango"}
+Set_2 = {"papaya", "Mango", "kivi"}
+union = Set_1 | Set_2
+intersection = Set_1 & Set_2
+difference = Set_1 - Set_2
+print(union)  #union
+print(intersection)  #intersection
+print(difference)  #difference
+#add new fruit
+Set_1.add("Jakefruit")
+print(Set_1)
+Set_2.remove("papaya")
+print(Set_2)
+Set_2.discard("papaya")
+print(Set_2)
+
+
+# 3.Create a list of elements and convert it into both a tuple and a set.Print both the tuple and the set.Try to add new elements to the tuple and set. What differences do you observe?
+my_list = [1, 2, 3, 4, 5]
+my_tuple = tuple(my_list)
+my_set = set(my_list)
+print("Tuple:", my_tuple)
+print("Set:", my_set)
+#add an element
+my_set.add(6)
+print("Updated Set:", my_set)
+my_tuple.append(6)  #Error
+#to avoid error in tuple create new tuple
+New_tuple = my_tuple + (6,)
+print("Updated Tuple:", New_tuple)
+
+
