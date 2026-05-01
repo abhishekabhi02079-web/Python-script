@@ -1,0 +1,39 @@
+#Dictionary
+d = {
+    "a": 1, 
+    "b": 2, 
+    "c": 3
+}
+
+print(d)
+print(type(d))
+#Accessing values
+print(d["a"])
+print(d.get("d" , "Not Found")) #safe way to access values, returns "Not Found" if key is not present
+
+#Adding or updating values
+d["d"] = 4
+print(d)
+print("Updating...")
+d["a"] = 10
+print(d)
+
+#Removing values
+# d.pop("b") #removes key "b" and its value
+# print(d)
+# del d["c"] #removes key "c" and its value
+# print(d)
+# d.clear() #removes all key-value pairs
+# print(d)
+
+print(d.keys()) #returns a view of the keys in the dictionary
+print(d.values()) #returns a view of the values in the dictionary
+print(d.items()) #returns a view of the key-value pairs in the dictionary
+
+New_d = {
+    "e": 5, 
+    "f": 6
+}
+d.update(New_d) #merges New_d into d
+print(d)
+
