@@ -1,0 +1,39 @@
+# 1. Create a dictionary to store information about 5 cities in Karnataka and their famous dishes.Add a new city and its dish to the dictionary.Update the dish for Bengaluru.
+Remove one city from the dictionary.Use the keys() method to print all city names in the dictionary.Use the values() method to print all dishes in the dictionary.
+# 1. Create a dictionary with 5 cities and their famous dishes
+karnataka_dishes = {
+    "Mysuru": "Mysore Pak",
+    "Mangaluru": "Neer Dosa",
+    "Hubballi": "Dharwad Peda",
+    "Udupi": "Udupi Sambar",
+    "Belagavi": "Kunda"
+}
+print("Initial Dictionary:")
+print(karnataka_dishes)
+
+# 2. Add a new city and its dish
+karnataka_dishes["Shivamogga"] = "Akki Rotti"
+print("\nAfter Adding Shivamogga:")
+print(karnataka_dishes)
+
+# 3. Update the dish for Bengaluru
+karnataka_dishes["Bengaluru"] = "Bisi Bele Bath"
+print("\nAfter Updating Bengaluru:")
+print(karnataka_dishes)
+
+# 4. Remove one city from the dictionary
+karnataka_dishes.pop("Hubballi")
+print("\nAfter Removing Hubballi:")
+print(karnataka_dishes)
+
+# 5. Print all city names (keys)
+print("\nCities:")
+print(karnataka_dishes.keys())
+
+# 6. Print all dishes (values)
+print("\nDishes:")
+print(karnataka_dishes.values())
+
+
+
+
