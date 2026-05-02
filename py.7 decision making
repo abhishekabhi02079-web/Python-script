@@ -1,0 +1,48 @@
+# if statement
+#syntax: if condition:
+             #statement
+age = 18
+if age >= 18:
+    print("You are eligible to vote.")
+
+
+
+
+# if-else statement
+#syntax: if condition:
+             #statement
+          #else:
+             #statement
+age = 16
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
+
+X = 23
+if X%2 == 0:
+    print("X is an even number.")
+else:
+    print("X is an odd number.")
+
+
+
+
+# if-elif-else statement   
+#syntax: if condition:
+             #statement
+          #elif condition:
+             #statement
+          #else:
+             #statement
+marks = 65
+if marks >= 90:
+    print("Grade: A")
+elif marks >= 80:
+    print("Grade: B")
+elif marks >= 70:
+    print("Grade: C")
+elif marks >= 60:
+    print("Grade: D")
+else:
+    print("Grade: F")
