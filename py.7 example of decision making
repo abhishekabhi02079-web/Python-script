@@ -45,3 +45,18 @@ elif marks >= 60:
     print("Grade: D")
 else:
     print("Grade: F")
+
+
+
+# nested if statement
+#syntax: if condition:
+             #statement
+          #if condition:
+             #statement
+number = int(input("Enter a number: "))
+if number > 0:
+    print("The number is positive.")
+    if number % 2 == 0:
+        print("The number is even.")
+    else:
+        print("The number is odd.")
