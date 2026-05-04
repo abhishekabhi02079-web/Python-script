@@ -90,3 +90,17 @@ elif score < 60:
     print("Grade: F")
 else:
     print("Invalid score. Please enter a score between 0 and 100.")
+
+
+# 8.Weather advice: Write a program that takes the current temperature as input and gives advice on what to wear. If the temperature is below 0°C, advise to wear a heavy coat. If it's between 0°C and 15°C, advise to wear a jacket. If it's between 15°C and 25°C, advise to wear a sweater. If it's above 25°C, advise to wear light clothing.
+temperature = float(input("Enter the current temperature in °C: "))
+if temperature < 0:
+    print("It's very cold. You should wear a heavy coat.")
+elif temperature >= 0 and temperature < 15:
+    print("It's chilly. You should wear a jacket.")
+elif temperature >= 15 and temperature < 25:
+    print("It's cool. You should wear a sweater.")
+elif temperature >= 25:
+    print("It's warm. You should wear light clothing.")
+else:
+    print("Invalid temperature. Please enter a valid temperature in °C.")
