@@ -1,0 +1,13 @@
+a = Float(input("Enter the number: "))
+b = Float(input("Enter the number: "))
+
+print("Before swapping: ")
+print("a = ",a)
+print("b = ",b)
+
+#swapping of number
+a,b = b,a
+
+print("After swapping: ")
+print("a = ",a)
+print("b = ",b)
